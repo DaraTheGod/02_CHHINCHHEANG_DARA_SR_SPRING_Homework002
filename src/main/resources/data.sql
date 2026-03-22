@@ -1,26 +1,26 @@
-INSERT INTO instructors (instructor_id, instructor_name, email)
+INSERT INTO instructors
 VALUES
-    (1, 'Dr. John Smith', 'john.smith@example.com'),
-    (2, 'Prof. Sarah Lee', 'sarah.lee@example.com'),
-    (3, 'Dr. Michael Chen', 'michael.chen@example.com'),
-    (4, 'Prof. Anna Kim', 'anna.kim@example.com'),
-    (5, 'Dr. David Brown', 'david.brown@example.com');
+    (default, 'Dr. John Smith', 'john.smith@example.com'),
+    (default, 'Prof. Sarah Lee', 'sarah.lee@example.com'),
+    (default, 'Dr. Michael Chen', 'michael.chen@example.com'),
+    (default, 'Prof. Anna Kim', 'anna.kim@example.com'),
+    (default, 'Dr. David Brown', 'david.brown@example.com');
 
-INSERT INTO courses (course_id, course_name, description, instructor_id)
+INSERT INTO courses
 VALUES
-    (1, 'Spring Boot Development', 'Learn backend development using Spring Boot', 1),
-    (2, 'Database Systems', 'Introduction to relational databases and SQL', 2),
-    (3, 'Web Development', 'Full stack web development fundamentals', 3),
-    (4, 'Mobile App Development', 'Build mobile apps using Flutter', 4),
-    (5, 'Software Engineering', 'Software design principles and practices', 5);
+    (default, 'Spring Boot Development', 'Learn backend development using Spring Boot', 1),
+    (default, 'Database Systems', 'Introduction to relational databases and SQL', 2),
+    (default, 'Web Development', 'Full stack web development fundamentals', 3),
+    (default, 'Mobile App Development', 'Build mobile apps using Flutter', 4),
+    (default, 'Software Engineering', 'Software design principles and practices', 5);
 
-INSERT INTO students (student_id, student_name, email, phone_number)
+INSERT INTO students
 VALUES
-    (1, 'Alice Johnson', 'alice.johnson@example.com', '012345678'),
-    (2, 'Bob Williams', 'bob.williams@example.com', '098765432'),
-    (3, 'Charlie Davis', 'charlie.davis@example.com', '011223344'),
-    (4, 'Dara Chhinchheang', 'dara.chhin@example.com', '077889900'),
-    (5, 'Emma Wilson', 'emma.wilson@example.com', '066554433');
+    (default, 'Alice Johnson', 'alice.johnson@example.com', '012345678'),
+    (default, 'Bob Williams', 'bob.williams@example.com', '098765432'),
+    (default, 'Charlie Davis', 'charlie.davis@example.com', '011223344'),
+    (default, 'Dara Chhinchheang', 'dara.chhin@example.com', '077889900'),
+    (default, 'Emma Wilson', 'emma.wilson@example.com', '066554433');
 
 INSERT INTO student_course (student_id, course_id)
 VALUES
